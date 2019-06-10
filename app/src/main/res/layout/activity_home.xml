@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".HomeActivity">
+
+    <!--利用帧布局作为碎片切换的容器，并且在其中嵌入默认碎片-->
+    <FrameLayout
+        android:id="@+id/frame_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation">
+
+        <fragment
+            android:name="com.minos.slaver.Fragment_Food"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation"
+        app:itemIconTint="@drawable/navigation_selector"
+        app:itemTextColor="@drawable/navigation_selector"
+        app:itemIconSize="30dp"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemBackground="@color/colorWhite"/>
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/navigation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/upload_button"
+        android:elevation="8dp" />
+
+    <ImageView
+        android:id="@+id/upload_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:elevation="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_camera_alt_black_24dp" />
+
+</RelativeLayout>

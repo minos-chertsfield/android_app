@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_ripple_low"
+        android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/all_cart"-->
+        <!--android:padding="5dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_marginLeft="270dp"-->
+        <!--android:text="总价"-->
+        <!--android:textColor="@color/colorWhite" />-->
+    <Button
+        android:id="@+id/clear_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="清空"
+        android:background="@drawable/btn_ripple_low"
+        android:textColor="@color/colorWhite"
+       android:layout_alignParentRight="true"/>
+
+
+
+</RelativeLayout>

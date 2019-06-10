@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--菜谱的封面-->
+                <ImageView
+                    android:id="@+id/cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/add_cover"/>
+                <!--菜谱的名称-->
+                <EditText
+                    android:id="@+id/recipe_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:hint="请输入菜谱的名称"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用料:"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+                <!--菜谱用料-->
+                <EditText
+                    android:id="@+id/ingredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:hint="如：牛奶 250克"
+                    android:inputType="textMultiLine"
+                    android:maxLines="10"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="做法:"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="步骤1："
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+                <ImageView
+                    android:id="@+id/step1_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                   android:src="@drawable/add_img"/>
+                <EditText
+                    android:id="@+id/step1"
+                    android:hint="步骤说明"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textAlignment="textStart"
+                    android:minLines="1"
+                    android:maxLines="5"/>
+
+
+
+                <WebView
+                    android:id="@+id/preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="添加步骤"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/btn_ripple_low"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/recipe_finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="上传"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/btn_ripple_low"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <HorizontalScrollView
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/preview_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预览"/>
+            <Button
+                android:id="@+id/remove_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除步骤"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

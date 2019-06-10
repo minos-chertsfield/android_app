@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="美食" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_play_circle_outline_black_24dp"
+        android:title="课程" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:title="上传" />
+
+    <item
+        android:id="@+id/navigation_collection"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title="收藏" />
+
+    <item
+        android:id="@+id/navigation_personal"
+        android:icon="@drawable/personal_icon"
+        android:title="个人" />
+
+
+</menu>

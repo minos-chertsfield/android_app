@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--自定义ListView布局-->
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:drawableEnd="@drawable/ic_chevron_grey"
+    android:textColor="@color/colorGrey"
+    android:fontFamily="sans-serif-thin"
+    android:singleLine="true"
+    android:textSize="18sp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:ellipsize="marquee"
+    android:textAlignment="inherit"/>
+
+

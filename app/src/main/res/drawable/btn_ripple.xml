@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:sizeandroid="http://schemas.android.com/apk/res-auto"
+xmlns:solidandroid="http://schemas.android.com/tools"
+android:color="@color/colorGrey">
+<item>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <!--填充颜色-->
+        <solid android:color="@color/transparent"/>
+        <!--边框相关属性的设置-->
+        <stroke android:color="@color/colorWhite" android:width="2dp" />
+    </shape>
+
+
+</item>
+</ripple>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:id="@+id/txt_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:padding="5dp"
+        android:includeFontPadding="true"
+        android:text="精致糕点" />
+
+
+    <ImageButton
+        android:id="@+id/btn_favorites_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_details"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="7dp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_favorite_border_black_24dp" />
+
+
+    <ImageView
+        android:id="@+id/commodity_image_show"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:scaleType="centerCrop" />
+
+    <!--立即购买按钮-->
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/horizental"
+        android:layout_marginTop="400dp">
+
+        <!--<ScrollView-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent">-->
+
+            <ListView
+                android:scrollbars="none"
+                android:id="@+id/list_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null" />
+        <!--</ScrollView>-->
+    </FrameLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizental"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_paynow"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_ripple_low"
+                android:text="立即购买"
+                android:textColor="@color/colorWhite" />
+
+            <!--加入购物车按钮-->
+            <Button
+                android:id="@+id/btn_put_into_cart"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_ripple_low"
+                android:text="加入购物车"
+                android:textColor="@color/colorWhite" />
+
+            <!--收藏按钮-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_favorites"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:background="@drawable/btn_ripple_low"-->
+                <!--android:text="收藏"-->
+                <!--android:textColor="@color/colorWhite" />-->
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

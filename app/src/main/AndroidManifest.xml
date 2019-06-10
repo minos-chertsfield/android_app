@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.minos.slaver">
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo48"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo48"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeEX">
+        <activity android:name=".RecipeContentActivity"></activity>
+        <activity android:name=".RecipeShowActivity" />
+        <activity android:name=".RechargeActivity" />
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".ShoppingCartActivity" />
+        <activity android:name=".RecipeActivity" />
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".FavoritesActivity" />
+        <activity android:name=".ShopActivity" />
+        <activity
+            android:name=".VideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".CongratulationActivity" />
+        <activity android:name=".CommentActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.minos.slaver.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".LoginTwoActivity" />
+        <activity android:name=".LoginOneActivity" />
+        <activity android:name=".CharacteristicActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:theme="@style/AppThemeEX" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppThemeEX" />
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".StartActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

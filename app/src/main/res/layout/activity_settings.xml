@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorVeryLightGrey">
+
+    <!--用户的设置功能项的列表-->
+    <ListView
+        android:id="@+id/listView_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="90dp"
+        android:dividerHeight="2dp" />
+
+    <Button
+        android:id="@+id/quit_app"
+        android:text="退出应用"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:background="@drawable/btn_ripple_low"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:drawableEnd="@drawable/paw"
+        android:layout_marginTop="500dp"/>
+
+    <TextView
+        android:textColor="@color/colorGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:text="v1.0.0"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCartActivity"
+    android:background="@color/colorLovelyOrange">
+
+
+
+    <ListView
+        android:layout_marginTop="90dp"
+        android:id="@+id/cart_list"
+        android:scrollbars="none"
+        android:dividerHeight="10dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorWhite">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cart_sum"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:padding="5dp"
+                android:text="总价：0.0元"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/count_price"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="结算"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:background="@drawable/btn_ripple_low"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="260dp"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+
+
+</RelativeLayout>

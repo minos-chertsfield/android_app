@@ -22,7 +22,7 @@
 
 ### 七、个人信息
 
-<img src="https://github.com/minos-chertsfield/android_app/blob/master/app/src/main/res/drawable/img8.jpg" width=240 height=400/>
+<img src="https://github.com/minos-chertsfield/android_app/blob/master/app/src/main/res/drawable/img12.jpg" width=240 height=400/>
 ### 八、设置功能
 
 <img src="https://github.com/minos-chertsfield/android_app/blob/master/app/src/main/res/drawable/img9.jpg" width=240 height=400/>

@@ -37,9 +37,9 @@
 <img src="https://github.com/minos-chertsfield/android_app/blob/master/app/src/main/res/drawable/img9.jpg" width=240 height=400/>
 
 ### 九、评论功能
-#### &emsp;$emsp;将评论区嵌套在帧布局中，利用重写Adapter显示评论区布局，根据后台刷新数据动态显示，绑定Handler及时反馈数据。
+#### &emsp;&emsp;将评论区嵌套在帧布局中，利用重写Adapter显示评论区布局，根据后台刷新数据动态显示，绑定Handler及时反馈数据。
 <img src="https://github.com/minos-chertsfield/android_app/blob/master/app/src/main/res/drawable/img11.jpg" width=240 height=400/>
 
 ### 十、收藏功能
-#### &emsp;$emsp;利用Intent消息传递机制唤醒应用，并根据文件格式，利用原生功能分享文本或链接。
+#### &emsp;&emsp;利用Intent消息传递机制唤醒应用，并根据文件格式，利用原生功能分享文本或链接。
 <img src="https://github.com/minos-chertsfield/android_app/blob/master/app/src/main/res/drawable/img10.jpg" width=240 height=400/>

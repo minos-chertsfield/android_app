@@ -2,7 +2,7 @@
 ![logo](https://github.com/minos-chertsfield/android_app/blob/master/app/src/main/res/mipmap-mdpi/logo96.png "垂涎")
 
 ### 一、注册功能
-![test](https://github.com/minos-chertsfield/android_app/blob/master/app/src/main/res/drawable/img.jpg "注册"）
+![test](https://github.com/minos-chertsfield/android_app/blob/master/app/src/main/res/drawable/img1.jpg "注册"）
 
 ### 二、登录功能
 

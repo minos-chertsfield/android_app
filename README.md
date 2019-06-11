@@ -25,7 +25,8 @@
 ### 六、菜谱功能
 #### &emsp;&emsp;用户可以在界面中根据提示添加图片和文字，通过按钮可以动态增加控件来添加菜谱的步骤。
 <img src="https://github.com/minos-chertsfield/android_app/blob/master/app/src/main/res/drawable/img6.jpg" width=240 height=400/>
-#### &emsp;&emsp;界面中显示菜谱的封面以及作者的头像和用户名。     
+
+#### 界面中显示菜谱的封面以及作者的头像和用户名。  
 <img src="https://github.com/minos-chertsfield/android_app/blob/master/app/src/main/res/drawable/img7.jpg" width=240 height=400/>
 
 ### 七、个人信息

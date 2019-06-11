@@ -33,7 +33,7 @@
 <img src="https://github.com/minos-chertsfield/android_app/blob/master/app/src/main/res/drawable/img12.jpg" width=240 height=400/>
 
 ### 八、设置功能
-#### &emsp;$emsp;常见的的设置选项。
+#### &emsp;&emsp;常见的的设置选项。
 <img src="https://github.com/minos-chertsfield/android_app/blob/master/app/src/main/res/drawable/img9.jpg" width=240 height=400/>
 
 ### 九、评论功能
